@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<script src="./js/main.js"></script>
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | [Challenge Name Here]</title>
+
+		<link rel="stylesheet" href="css/main.min.css" />
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<section>
+				<div class="container">
+					<h1 class="header header--center">Our Pricing</h1>
+					<div class="prices-toggle__container">
+						<span>Annually</span>
+						<input
+							type="checkbox"
+							name="checkanually"
+							class="toggle_switch"
+							id="toggle_pricing1"
+							checked
+						/>
+						<span>Monthly</span>
+					</div>
+					<div class="price-table">
+						<div
+							class="price-table__box price-table__box--center price-table__box--white"
+						>
+							<h4>Basic</h4>
+							<h3 class="price monthly">
+								&dollar;19.99
+							</h3>
+							<h3 class="price annually">
+								&dollar;199.99
+							</h3>
+							<div
+								class="price-table__list price-table__list--dark"
+							>
+								<p>500 GB Storage</p>
+								<p>2 Users Allowed</p>
+								<p>Send up to 3 GB</p>
+							</div>
+							<button class="btn btn--purple">Learn More</button>
+						</div>
+						<div
+							class="price-table__box price-table__box--center price-table__middle price-table__box--purple"
+						>
+							<h4>Professional</h4>
+							<h3 class="price monthly">
+								&dollar;24.99
+							</h3>
+							<h3 class="price annually">
+								&dollar;249.99
+							</h3>
+							<div
+								class="price-table__list price-table__list--white"
+							>
+								<p>1 TB Storage</p>
+								<p>5 Users Allowed</p>
+								<p>Send up to 10 GB</p>
+							</div>
+
+							<button class="btn btn--white">Learn More</button>
+						</div>
+						<div
+							class="price-table__box price-table__box--center price-table__box--white"
+						>
+							<h4>Master</h4>
+							<h3 class="price monthly">
+								&dollar;39.99
+							</h3>
+							<h3 class="price annually">
+								&dollar;399.99
+							</h3>
+							<div
+								class="price-table__list price-table__list--dark"
+							>
+								<p>2 TB Storage</p>
+								<p>10 Users Allowed</p>
+								<p>Send up to 20 GB</p>
+							</div>
+							<button class="btn btn--purple">Learn More</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="attribution">
+				Challenge by
+				<a
+					href="https://www.frontendmentor.io?ref=challenge"
+					target="_blank"
+					>Frontend Mentor</a
+				>. Coded by
+				<a href="https://github.com/thomasjonstrup">thomasjonstrup</a>.
+			</div>
+		</footer>
+	</body>
+</html>

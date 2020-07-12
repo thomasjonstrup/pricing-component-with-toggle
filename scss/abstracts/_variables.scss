@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+// 700
+$body-font-stack: Montserrat, sans-serif;
+$element-font-stack: "Raleway", "Helvetica Neue Light", "Helvetica Neue",
+	"Helvetica", "Arial", sans-serif !default;
+
+$text-color: hsl(210, 10%, 33%);
+$lighttext-color: hsl(201, 11%, 66%);
+
+$brand-color: rgb(229, 0, 80);
+
+// Primary
+$primary-dark-blue: hsl(243, 87%, 12%);
+
+$primary-des-blue: hsl(238, 22%, 44%);
+
+// Accent
+$accent-blue: hsl(233, 100%, 69%);
+
+$accent-cyan: hsl(171, 66%, 44%);
+
+// Neutral
+$white: hsl(0, 0%, 100%);
+
+$dark-background: #404b69;
+
+$dark-grayish-blue: hsl(232, 13%, 33%);
+
+$purpleGradientLight: hsl(236, 72%, 79%);
+$purpleGradientDarker: hsl(237, 63%, 64%);
+
+$bluish-white: hsl(240, 78%, 98%);
+
+$transparent: hsla(0, 0%, 100%, 0);
+
+$neutral-light-gray: hsl(0, 0%, 75%);
+
+$neutral-grayish-blue: hsl(240, 75%, 98%);
+
+$input-light-border: hsla(0, 0%, 60%, 0.7);
+
+$ease-smoothing: cubic-bezier(0.19, 1, 0.22, 1);
+
+$imgfolder: "assets/images";
+
+$blue: hsl(214, 47%, 23%);
+$dark-blue: hsl(237, 49%, 15%);
+
+$purple: hsl(230, 89%, 62%);
+$purple-daker: hsl(230, 89%, 65%);
+
+$red: hsl(349, 71%, 52%);
+$red-daker: hsl(349, 70%, 56%);
+
+$yellow: hsl(39, 89%, 49%);
+$yellow-daker: hsl(40, 84%, 53%);
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: "../../" !default;

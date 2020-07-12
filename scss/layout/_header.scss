@@ -1,0 +1,28 @@
+.page-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 15px auto 70px auto;
+
+	&__logo {
+		width: 25%;
+		display: flex;
+		align-items: center;
+	}
+	max-width: 80%;
+
+	.header {
+
+		&__nav__list__item__link {
+			border-bottom-style: solid;
+			border-bottom-width: 2px;
+			border-bottom-color: $transparent;
+			transition: .5s;
+			color: $primary-dark-blue;
+
+			&:hover {
+				border-bottom-color: $accent-blue;
+			}
+		}
+	}
+}

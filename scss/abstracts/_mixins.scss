@@ -1,0 +1,60 @@
+@mixin box-shadow($top, $left, $blur, $spread, $color, $inset: false) {
+	@if $inset {
+		-webkit-box-shadow: inset $top $left $blur $spread $color;
+		-moz-box-shadow: inset $top $left $blur $spread $color;
+		box-shadow: inset $top $left $blur $spread $color;
+	} @else {
+		-webkit-box-shadow: $top $left $blur $spread $color;
+		-moz-box-shadow: $top $left $blur $spread $color;
+		box-shadow: $top $left $blur $spread $color;
+	}
+}
+
+@mixin for-desktop-up {
+	@media (min-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin for-phone-only {
+	@media (max-width: 599px) {
+		@content;
+	}
+}
+
+// Small devices
+@mixin sm {
+	@media (min-width: #{$screen-sm-min}) {
+		@content;
+	}
+}
+
+// Medium devices
+@mixin md {
+	@media (min-width: #{$screen-md-min}) {
+		@content;
+	}
+}
+
+// Large devices
+@mixin lg {
+	@media (min-width: #{$screen-lg-min}) {
+		@content;
+	}
+}
+
+// Extra large devices
+@mixin lg {
+	@media (min-width: #{$screen-xl-min}) {
+		@content;
+	}
+}
+
+// from https://medium.com/codeartisan/breakpoints-and-media-queries-in-scss-46e8f551e2f2
+
+// Custom devices
+@mixin rwd($screen) {
+	@media (min-width: $screen+"px") {
+		@content;
+	}
+}

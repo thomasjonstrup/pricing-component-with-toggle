@@ -1,0 +1,6 @@
+/*
+* Returns URL to an image
+*/
+@function image($path, $base: $base-url) {
+	@return url($base+$imgfolder+'/'+$path);
+}

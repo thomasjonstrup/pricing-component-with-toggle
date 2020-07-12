@@ -1,0 +1,53 @@
+.btn {
+	cursor: pointer;
+	user-select: none;
+	outline: none;
+	border: none;
+	transition: 0.3, ease-in;
+	border-radius: 4px;
+	font-weight: 700;
+	//color: $white;
+	min-height: 48px;
+	width: 80%;
+	text-transform: uppercase;
+
+	&:active {
+		box-shadow: none;
+		transform: translate(3px, 2px);
+	}
+
+	&--blue {
+		background-color: $accent-blue;
+		color: $white;
+
+		&:hover {
+			background-color: lighten($accent-blue, 10%);
+		}
+	}
+
+	&--purple {
+		background-image: linear-gradient(
+			to right,
+			$purpleGradientLight,
+			$purpleGradientDarker
+		);
+		color: $white;
+
+		&:hover {
+			background-color: lighten($purpleGradientDarker, 10%);
+		}
+	}
+
+	&--white {
+		background-color: $white;
+
+		&:hover {
+			background-color: darken(white, 10%);
+		}
+	}
+
+	&--lighter-blue {
+		background-color: lighten($accent-blue, 5%);
+		color: $white;
+	}
+}

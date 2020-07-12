@@ -1,0 +1,145 @@
+html {
+	box-sizing: border-box;
+	font-size: 55%;
+	-webkit-font-smoothing: antialiased;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.annually {
+	display: none;
+}
+
+.monthly {
+	display: block;
+}
+
+body {
+	height: 100vh;
+	background: $bluish-white;
+	font-family: $body-font-stack;
+	color: $dark-grayish-blue;
+	font-size: 15px;
+
+	//background-image: url("../../images/bg-top.svg");
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+
+/*main {
+	background-image: url("../../images/bg-top.svg");
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}*/
+
+.container {
+	width: 80%;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin-left: auto;
+	margin-right: auto;
+
+	@media (max-width: 375px) {
+		width: 80%;
+	}
+}
+
+// toggle prices
+.prices-toggle {
+	&__container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 20px;
+		align-items: center;
+		justify-items: center;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+}
+
+// Price table
+
+.price-table {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	/*column-gap: 20px;
+	row-gap: 20px;*/
+
+	h3 {
+		font-size: 4rem;
+	}
+
+	@media (max-width: 750px) {
+		grid-template-columns: 1fr;
+		row-gap: 20px;
+	}
+
+	&__list {
+		margin-bottom: 20px;
+
+		&--white {
+			border-top: 1px solid $white;
+			p {
+				padding: 10px;
+				border-bottom: 1px solid $white;
+			}
+		}
+
+		&--dark {
+			border-top: 1px solid $dark-grayish-blue;
+			p {
+				padding: 10px;
+				//border-bottom: 1px solid $dark-grayish-blue;
+				border-bottom: 1px solid $dark-grayish-blue;
+			}
+		}
+	}
+
+	&__box {
+		min-height: 200px;
+		border-radius: 10px;
+		box-shadow: 0 0 30px rgba(0, 0, 0, 0.13);
+		//border: 2px solid rgba(10, 123, 183, 0.14);
+		padding: 20px;
+
+		&--white {
+			background: $bluish-white;
+		}
+
+		&--purple {
+			background-image: linear-gradient(
+				to right,
+				$purpleGradientLight,
+				$purpleGradientDarker
+			);
+			color: $white;
+		}
+
+		&--center {
+			text-align: center;
+		}
+	}
+
+	&__middle {
+		/*@media (min-width: 375px) {
+			transform: scale(1.1);
+		}*/
+
+		@include sm {
+			transform: scale(1.1);
+		}
+	}
+}
+
+footer {
+	padding: 30px;
+}
+
+// Header
+.header {
+	&--center {
+		text-align: center;
+	}
+}

@@ -1,0 +1,38 @@
+/**
+* Setup box model on root element
+*/
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+/**
+* Styles for lins
+*/
+a {
+	text-decoration: none;
+}
+
+/**
+* Images max-width is set to fit it's parent
+*/
+img {
+	max-width: 100%;
+}
+
+/**
+* Remove default style for unordered lists
+*/
+ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+body {
+	margin: 0;
+}
